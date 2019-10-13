@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "596531336930",
+    "firebase_url": "https://nit-delhi.firebaseio.com",
+    "project_id": "nit-delhi",
+    "storage_bucket": "nit-delhi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596531336930:android:fe0065f980694cd31270bb",
+        "android_client_info": {
+          "package_name": "com.example.myattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596531336930-79jrmv5jsn0ipo7fuoop7utp92bjo5j3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRglmKq2bUebmaCY1SM_YW6nnyKo6TWVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596531336930-79jrmv5jsn0ipo7fuoop7utp92bjo5j3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
