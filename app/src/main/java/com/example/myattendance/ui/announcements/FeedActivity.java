@@ -7,9 +7,13 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.myattendance.R;
 
+import java.util.List;
+
 public class FeedActivity extends AppCompatActivity {
 
     private RecyclerView feed_recyclerview;
+    private List<Feed_model> feed_models=null;
+    private Feed_adapter feed_adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,5 +21,10 @@ public class FeedActivity extends AppCompatActivity {
 
         feed_recyclerview=findViewById(R.id.feed_recyclerview);
         feed_recyclerview.setLayoutManager(new LinearLayoutManager(this));
+        if(feed_models!=null){
+            feed_adapter=new Feed_adapter(feed_models);
+            feed_recyclerview.setAdapter(feed_adapter);
+        }
+
     }
 }
