@@ -1,21 +1,23 @@
 package com.example.myattendance.ui.announcements;
 
-public class Feed_model {
-    String feed_banner;
-    String feed_clubname;
-    String feed_chip_date;
-    String feed_chip_vanue;
-    String chip_forgot;
+public class FeedModel {
+    public String feed_banner;
+    public String feed_clubname;
+    public String feed_chip_date;
+    public String feed_chip_venue;
+    public String chip_forgot;
+    public String data;
 
-    public Feed_model() {
+    public FeedModel() {
     }
 
-    public Feed_model(String feed_banner, String feed_clubname, String feed_chip_date, String feed_chip_vanue, String chip_forgot) {
+    public FeedModel(String feed_banner, String feed_clubname, String feed_chip_date, String feed_chip_venue, String chip_forgot) {
         this.feed_banner = feed_banner;
         this.feed_clubname = feed_clubname;
         this.feed_chip_date = feed_chip_date;
-        this.feed_chip_vanue = feed_chip_vanue;
+        this.feed_chip_venue = feed_chip_venue;
         this.chip_forgot = chip_forgot;
+        this.data="data";
     }
 
     public String getFeed_banner() {
@@ -30,6 +32,14 @@ public class Feed_model {
         return feed_clubname;
     }
 
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
     public void setFeed_clubname(String feed_clubname) {
         this.feed_clubname = feed_clubname;
     }
@@ -42,12 +52,12 @@ public class Feed_model {
         this.feed_chip_date = feed_chip_date;
     }
 
-    public String getFeed_chip_vanue() {
-        return feed_chip_vanue;
+    public String getFeed_chip_venue() {
+        return feed_chip_venue;
     }
 
-    public void setFeed_chip_vanue(String feed_chip_vanue) {
-        this.feed_chip_vanue = feed_chip_vanue;
+    public void setFeed_chip_venue(String feed_chip_venue) {
+        this.feed_chip_venue = feed_chip_venue;
     }
 
     public String getChip_forgot() {
